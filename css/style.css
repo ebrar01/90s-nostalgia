@@ -3,10 +3,16 @@ html {
     color: #222;
     line-height: 1.4;
     font-size: 110%;
+    background-color: white;
 }
 
 body {
-    margin: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.intro, .fashion-icons {
+    margin: 8%;
 }
 
 img {
@@ -17,12 +23,16 @@ img {
     width: 160px;
     margin: auto;
     display: block;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
 }
 
 .wrapper {
     max-width: 900px;
     margin: auto;
-    display: block;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     padding-right: 0;
@@ -38,26 +48,30 @@ header {
 
 ul{
     list-style-type: none;
-    display: inline;
-    text-align: center;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav {
+a {
     display: inline-block;
-    padding-top: .5em;
-    padding-bottom: .5em;
     padding-left: .75em;
     padding-right: .75em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    border-radius: 8px;
+    margin: 5px;
 }
 
-a:link {
+a:link, :visited {
     background-color: purple;
     color: white;
     border: 2px white;
     text-decoration: none ;
 }
 
-a:hover {
+a:hover, :focus {
     background-color: white;
     color: purple;
     border: 2px purple;
@@ -65,12 +79,78 @@ a:hover {
 
 .hero {
     width: 100%;
+    display: inline-block;
     padding-top: 10em;
     padding-bottom: 10em;
     padding-left: 0;
-    padding-bottom: 0;
+    padding-right: 0;
     background-image: url("../images/greatest-90s-fashion-trends.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+
+h1 {
+    width: 75%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin:auto;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,.25);
+}
+
+.trends{
+    background-color: purple;
+}
+
+.trends figure{
+    width: 22%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+}
+
+.icon{
+    display: inline-block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.icon  img {
+    width: 260px;
+    float: left;
+    margin-right: 2em;
+}
+
+.icon  p:last-of-type {
+    float: none;
+}
+
+.featured-articles {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer  p.wrapper {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 0;
+    padding-left: 0;
 }
